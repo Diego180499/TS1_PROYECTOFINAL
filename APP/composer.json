@@ -1,0 +1,13 @@
+{
+    "name": "hp/adivinamaya",
+    "description": "proyecto de un juego para adivinar numeros mayas",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\":"./",
+            "Controllers\\":"./controllers",
+            "Model\\":"./models"
+        }
+    },
+    "require": {}
+}

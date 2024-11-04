@@ -1,0 +1,670 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contenedor-app{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    background-size: cover;
+    background-position: center center;
+}
+
+.imagen{
+    background-image: url("../img/login.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+/*CONTENIDO DE LA APP*/
+
+
+.contenedor-formulario{
+    width: 90%;
+    margin: auto;
+}
+
+
+.formulario form{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(3, 26, 236, 0.75);
+    padding: 1rem;
+}
+
+.formulario .campo{
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.campo label{
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+    margin: auto;
+}
+
+.campo input{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+
+.campo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton{
+    width: 50%;
+    background-color: rgb(13, 13, 156);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+    border-radius: 1cm;
+}
+
+.opciones{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.opciones a{
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.boton:hover{
+    background-color: rgb(42, 42, 214);
+    border: none;
+    padding: 1rem;
+    color: black;
+}
+
+.regresar{
+    margin: 3rem;
+}
+
+.enlace{
+    background-color: blue;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid darkblue;
+}
+
+.enlace:hover{
+    background-color: darkblue;
+}
+
+/*JUEGO*/
+
+.contenedor-juego{
+    text-align: center;
+}
+
+.contenedor-enlace{
+    margin: 3rem;
+}
+
+.enlace-jugadores{
+    background-color: green;
+    border-radius: 5px;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+/*JUGADORES*/
+
+.contenedor-tabla{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.tabla{
+    text-align: center;
+    width: 75%;
+    border: 3px solid green;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+.tabla thead{
+    font-weight: 900;
+}
+
+thead,tbody:hover{
+    background-color: rgb(72, 180, 72);
+}
+
+.enlace-editar{
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enlace-eliminar{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*PANTALLA INCIAL*/
+/*EVENTOS*/
+.navegador{
+    background-color: darkblue;
+    padding: 2rem;
+}
+
+.nav-pe{
+    background-color: green;
+}
+
+.titulo-eventos{
+    text-align: center;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.navegador .enlace-inicio-sesion{
+    background-color: white;
+    width: 15%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1cm;
+}
+
+.navegador .enlace-inicio-sesion a{
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+
+.navegador .enlace-inicio-sesion:hover{
+    cursor: pointer;
+}
+
+.contenedor-eventos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.evento{
+    margin: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(20, 194, 4, 0.75);
+    text-align: center;
+    border-radius: 0.3cm;
+}
+
+.enlace-reportar{
+    background-color: red;
+    color: white;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 1cm;
+}
+
+.enlace-reportar:hover{
+    cursor: pointer;
+    background-color: darkred;
+}
+
+
+.enlace-inicio{
+    background-color: white;
+    width: 5%;
+    text-align: center;
+    border-radius: 1cm;
+    margin: 0;
+}
+
+.enlace-inicio a{
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+
+.enlace-inicio:hover{
+    cursor: pointer;
+}
+
+
+
+/*FORMULARIOS*/
+
+.contenedor-formulario{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario-reportar{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.campo-form{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.campo-form label{
+    font-size: 3rem;
+    color: darkblue;
+}
+
+.campo-form textarea{
+    width: 70%;
+}
+
+.boton-form{
+    display: flex;
+    justify-content: center;
+}
+
+.boton-form input{
+    width: 25%;
+    font-size: 2rem;
+    border-radius: 1cm;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+}
+
+.boton-form input:hover{
+    cursor: pointer;
+}
+
+/*LOGIN*/
+
+/*LOGIN*/
+
+.contenedor{
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-login{
+    text-align: center;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.formulario{
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+}
+.campo label{
+    margin: auto;
+    width: 25%;
+}
+
+.campo input{
+    width: 75%;
+}
+
+/*MODULO ADMIN*/
+
+.nav-admin{
+    background-color: brown;
+}
+
+.titulo-admin h3{
+    padding: 2rem 4rem;
+    box-shadow: 0px 4px 8px rgba(236, 108, 3, 0.75);
+    color: brown;
+}
+.enlaces-admin{
+    display: flex;
+    justify-content: space-around;
+}
+
+.enlaces-admin a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 1cm;
+    margin: 0;
+}
+
+.enlaces-admin a:hover{
+    background-color: gray;
+}
+
+/* eventos reportados */
+.navegador-ev{
+    background-color: darkblue;
+    padding: 2rem;
+}
+
+.navegador-ev .enlace-inicio-sesion-ev{
+    background-color: white;
+    width: 15%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1cm;
+}
+
+.navegador-ev .enlace-inicio-sesion-ev a{
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+
+.navegador-ev .enlace-inicio-sesion-ev:hover{
+    cursor: pointer;
+}
+
+.contenedor-eventos-ev{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.evento-ev{
+    margin: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 0.3cm;
+}
+
+.detalle-reporte{
+    display: flex;
+    justify-content: center;
+}
+
+.detalle-reporte h4{
+    color: darkred;
+    font-size: bold;
+    padding: 2rem;
+}
+
+.detalle-reporte h4:hover{
+    background-color: rgb(204, 74, 74);
+    color: white;
+}
+
+
+/*MODULOS*/
+.titulo-bienvenido{
+    display: flex;
+    justify-content: center;
+    color: darkblue;
+    font-size: 4rem;
+}
+
+/*PUBLICADOR*/
+.enlaces-publicador{
+    display: flex;
+    justify-content: space-around;
+}
+
+.enlaces-publicador a{
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.contenedor-crear-evento{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+}
+
+.titulo-crear-evento{
+    width: 75%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.contenedor-formulario-ce{
+    width: 75%;
+    margin: 2rem auto;
+}
+
+.formulario-ce{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 75%;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(3, 26, 236, 0.75);
+}
+
+.campo-ce{
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+}
+
+.campo-ce label{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.boton-ce{
+    background-color: blue;
+    color: white;
+    width: 40%;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1cm;
+}
+
+.boton-ce:hover{
+    cursor: pointer;
+}
+
+.boton-aceptar{
+    background-color: green;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 1cm;
+}
+
+.p-organizador{
+    color: blue;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.titulo-solicitudes{
+    text-align: center;
+}
+
+.boton-banear{
+    background-color: red;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 1cm;
+}
+
+.enlace-reportar-ur{
+ background-color: red;
+ color: white;
+ padding: 1rem 2rem;
+ margin: 0;
+ text-decoration: none;
+ border-radius: 1cm; 
+}
+
+
+.boton-reservar{
+    background-color: green;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 1cm;
+    border: none;
+}
+
+.boton-reservar:hover{
+    background-color: rgb(7, 189, 7);
+    color:black;
+    cursor: pointer;
+}
+
+
+.opciones-ur{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.navegador-ur{
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.enlace-ur{
+    background-color: white;
+    color: black;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 1cm;
+}
+
+.enlace-ur a{
+    text-decoration: none;
+}
+
+.enlace-ur:hover{
+    cursor: pointer;
+}
+
+
+.titulo-reservs{
+    text-align: center;
+    color: blue;
+    font-size: 3rem;
+}
+
+.estado{
+    font-size: 2rem;
+    font-weight: bold;
+    color: green;
+}
+
+.enlace-ea{
+    background-color: red;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 1cm;
+}
+
+.enlace-ea:hover{
+    cursor: pointer;
+}
+
+.navegador-cc{
+    background-color: blue;
+}
+
+
+
+/*Enlaces*/
+.enlace-evento{
+    background-color: green;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.75rem;
+}
+
+.estado-t{
+    color: green;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.estado-f{
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.reaprobar-e{
+    background-color: green;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: bold;
+    border-radius: 1cm;
+}
+
+.select{
+    background-color: blue;
+    color: white;
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
